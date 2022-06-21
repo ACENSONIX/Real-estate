@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Box } from "@chakra-ui/react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Search from "../pages/search";
 
 export default function Layout({ children }) {
   return (
