@@ -128,7 +128,6 @@ export default PropertyDetails;
 
 export async function getServerSideProps({ params: { id } }) {
   const data = await fetchApi(`${BaseUrl}/properties/detail?externalID=${id}`);
-  console.log(data);
   return {
     props: { propertyDetails: data }, // will be passed to the page component as props
   };
